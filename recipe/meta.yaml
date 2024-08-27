@@ -1,6 +1,5 @@
 {% set version = '1.2.1' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-tca
@@ -13,8 +12,7 @@ source:
   sha256: 8bd3ab276b966802b0022cccefead65d2c3f85ef43e775ff629b907c2ad0d7bf
 
 build:
-  merge_build_host: True  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
